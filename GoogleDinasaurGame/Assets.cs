@@ -5,7 +5,7 @@ namespace GoogleDinasaurGame
 {
     public static class Assets
     {
-        public static Texture2D DinasaurTexture, CactusTexture, GroundTexture, CloudTexture, ReplayButtonTexture, GameOverTextTexture, DropletTexture;
+        public static Texture2D DinasaurTexture, CactusTexture, GroundTexture, CloudTexture, ReplayButtonTexture, GameOverTextTexture, DropletTexture, SplashTexture;
         
         public static SpriteFont ScoreFont;
 
@@ -20,6 +20,7 @@ namespace GoogleDinasaurGame
             ReplayButtonTexture = Globals.Content.Load<Texture2D>("Sprites/Replay Button");
             GameOverTextTexture = Globals.Content.Load<Texture2D>("Sprites/GameOver Text");
             DropletTexture = Globals.Content.Load<Texture2D>("Sprites/Droplet");
+            SplashTexture = Globals.Content.Load<Texture2D>("Sprites/Splash");
 
             ScoreFont = Globals.Content.Load<SpriteFont>("Fonts/ScoreFont");
 

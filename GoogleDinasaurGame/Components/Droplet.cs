@@ -9,5 +9,8 @@ namespace GoogleDinasaurGame.Components
         public Vector2 Velocity;
 
         public const float Gravity = .02f;
+        public float Speed;
+        public bool Splashed;
+        public int SplashTimer;
     }
 }

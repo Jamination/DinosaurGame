@@ -40,6 +40,7 @@ namespace GoogleDinasaurGame
             GroundSystem.Load();
             CloudSystem.Load();
             CactusSystem.Load();
+            RainSystem.Load();
         }
 
         public static void PlaySound(Sounds sound)

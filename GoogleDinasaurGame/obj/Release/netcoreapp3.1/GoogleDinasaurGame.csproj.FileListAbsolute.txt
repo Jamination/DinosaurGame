@@ -1,9 +1,3 @@
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinasaurGame.exe
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinasaurGame.deps.json
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinasaurGame.runtimeconfig.json
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinasaurGame.runtimeconfig.dev.json
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinasaurGame.dll
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinasaurGame.pdb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\MonoGame.Framework.dll
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.so
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so
@@ -20,8 +14,6 @@ C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\o
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinasaurGame.AssemblyInfo.cs
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinasaurGame.csproj.CoreCompileInputs.cache
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinasaurGame.csproj.CopyComplete
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinasaurGame.dll
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinasaurGame.pdb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinasaurGame.genruntimeconfig.cache
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sprites\Cactus.xnb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sprites\Cloud.xnb
@@ -35,3 +27,13 @@ C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\b
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sounds\Restart.xnb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sounds\ScoreBonus.xnb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Fonts\ScoreFont.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sprites\Droplet.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sprites\Splash.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.exe
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.deps.json
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.runtimeconfig.json
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.runtimeconfig.dev.json
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.dll
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.pdb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinosaurGame.dll
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinosaurGame.pdb

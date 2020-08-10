@@ -20,7 +20,7 @@ namespace GoogleDinasaurGame.Systems
             
             Dinosaur.Hitbox.AABB = new Rectangle(0, 0, Dinosaur.Sprite.Texture.Width, Dinosaur.Sprite.Texture.Height);
             
-            Dinosaur.Transform.Position = new Vector2(Dinosaur.Sprite.Texture.Width * 3, ((GameSettings.ScreenHeight * .5f) + 150) - (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f);
+            Dinosaur.Transform.Position = new Vector2(Dinosaur.Sprite.Texture.Width * 4, ((GameSettings.ScreenHeight * .5f) + 150) - (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f);
             Dinosaur.Transform.Scale = Vector2.One * 2;
         }
 

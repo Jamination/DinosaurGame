@@ -22,7 +22,7 @@ namespace GoogleDinasaurGame.Systems
             if ((int)Score == Math.Floor(Score / 50) * 50 && Score > 5 && Score != LastScore)
             {
                 LastScore = Score;
-                TextScale = .5f;
+                TextScale = 1.5f;
                 TextColour = Color.Gold;
                 Functions.PlaySound(Sounds.ScoreBonus);
             }

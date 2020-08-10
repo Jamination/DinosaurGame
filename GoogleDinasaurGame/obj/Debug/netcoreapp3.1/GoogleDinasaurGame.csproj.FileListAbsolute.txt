@@ -36,3 +36,4 @@ C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\b
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\GoogleDinosaurGame.pdb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp3.1\GoogleDinosaurGame.dll
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp3.1\GoogleDinosaurGame.pdb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sprites\Splash.xnb

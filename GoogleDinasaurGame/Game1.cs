@@ -93,7 +93,7 @@ namespace GoogleDinasaurGame
         {
             GraphicsDevice.Clear(new Color(0f, .05f, .1f, 1f));
             
-            Globals.SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
+            Globals.SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
             
             CloudSystem.Draw();
             GroundSystem.Draw();
