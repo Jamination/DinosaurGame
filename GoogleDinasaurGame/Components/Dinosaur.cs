@@ -13,6 +13,6 @@
         public bool IsOnGround;
 
         public const float Gravity = .04f;
-        public const float JumpHeight = 1f;
+        public const float JumpHeight = -1f;
     }
 }

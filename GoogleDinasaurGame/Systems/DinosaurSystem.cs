@@ -33,7 +33,7 @@ namespace GoogleDinasaurGame.Systems
                         ((GameSettings.ScreenHeight * .5f) + 150) -
                         (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f)
                     {
-                        Dinosaur.VelY = -Dinosaur.JumpHeight;
+                        Dinosaur.VelY = Dinosaur.JumpHeight;
                         if (Globals.GameState == GameStates.BeforeStart)
                             Globals.GameState = GameStates.Running;
                         Functions.PlaySound(Sounds.Jump);
