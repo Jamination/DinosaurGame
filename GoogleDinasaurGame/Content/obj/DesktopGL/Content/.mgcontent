@@ -4,10 +4,14 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Cactus.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Cloud.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Dinasaur.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Ground.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/ScoreFont.spritefont</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Fonts/ScoreFont.spritefont</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Death.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Jump.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ScoreBonus.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cactus.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cloud.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Ground.png</File>
   </SourceFiles>
 </SourceFileCollection>

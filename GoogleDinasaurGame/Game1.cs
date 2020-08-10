@@ -16,7 +16,7 @@ namespace GoogleDinasaurGame
             Content.RootDirectory = "Content";
             Globals.Content = Content;
             
-            IsMouseVisible = true;
+            IsMouseVisible = false;
             IsFixedTimeStep = true;
 
             Globals.Graphics.PreferredBackBufferWidth = GameSettings.ScreenWidth;
@@ -29,7 +29,7 @@ namespace GoogleDinasaurGame
         protected override void Initialize()
         {
             base.Initialize();
-            Window.Title = "Google Dinasaur Game By James Heasman";
+            Window.Title = "Google Dinosaur Game By James Heasman";
         }
 
         protected override void LoadContent()
@@ -38,7 +38,7 @@ namespace GoogleDinasaurGame
             
             Assets.Load();
             CactusSystem.Load();
-            DinasaurSystem.Load();
+            DinosaurSystem.Load();
             GroundSystem.Load();
             CloudSystem.Load();
         }
@@ -53,19 +53,29 @@ namespace GoogleDinasaurGame
 
             Time.GameTime = gameTime;
             Time.DeltaTime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            
-            DinasaurSystem.Update();
-            CloudSystem.Update();
-            
-            if (Globals.GameStarted)
-            {
-                CactusSystem.Update();
-                GroundSystem.Update();
-                Globals.Speed = MathHelper.Lerp(Globals.Speed, Constants.MaxSpeed, .0001f);
-            }
 
-            if (Globals.GameStarted)
-                Globals.Score += .5f;
+            switch (Globals.GameState)
+            {
+                case GameStates.BeforeStart:
+                    DinosaurSystem.Update();
+                    CloudSystem.Update();
+                    break;
+                case GameStates.Running:
+                    DinosaurSystem.Update();
+                    CloudSystem.Update();
+                    CactusSystem.Update();
+                    GroundSystem.Update();
+                    ScoreSystem.Update();
+                    Globals.Speed = MathHelper.Lerp(Globals.Speed, Constants.MaxSpeed, .0001f);
+                    break;
+                case GameStates.GameOver:
+                    CloudSystem.Update();
+                    DinosaurSystem.Update();
+
+                    if (Input.IsKeyPressed(Input.KeyMap["restart"]))
+                        Functions.RestartGame();
+                    break;
+            }
 
             base.Update(gameTime);
         }
@@ -79,20 +89,9 @@ namespace GoogleDinasaurGame
             CloudSystem.Draw();
             GroundSystem.Draw();
             CactusSystem.Draw();
-            DinasaurSystem.Draw();
-            
-            Globals.SpriteBatch.DrawString(
-                Assets.ScoreFont,
-                ((int)Globals.Score).ToString(),
-                new Vector2(GameSettings.ScreenWidth * .5f, GameSettings.ScreenHeight * .025f),
-                Color.White,
-                0f,
-                new Vector2(Assets.ScoreFont.MeasureString(((int)Globals.Score).ToString()).X * .5f, 0),
-                Vector2.One,
-                SpriteEffects.None,
-                0f
-            );
-            
+            DinosaurSystem.Draw();
+            ScoreSystem.Draw();
+
             Globals.SpriteBatch.End();
 
             base.Draw(gameTime);

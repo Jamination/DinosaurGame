@@ -18,7 +18,7 @@ namespace GoogleDinasaurGame.Systems
                 Grounds[i].Sprite.Centered = false;
             
                 Grounds[i].Transform.Scale = Vector2.One * 2;
-                Grounds[i].Transform.Position = new Vector2(Grounds[i].Sprite.Texture.Width * Grounds[i].Transform.Scale.X * i, (GameSettings.ScreenHeight * .5f) + 150);
+                Grounds[i].Transform.Position = new Vector2(Grounds[i].Sprite.Texture.Width * Grounds[i].Transform.Scale.X * i, (GameSettings.ScreenHeight * .5f) + 140);
             }
         }
 
@@ -29,7 +29,7 @@ namespace GoogleDinasaurGame.Systems
                 Grounds[i].Transform.Position.X -= Globals.Speed;
                 
                 if (Grounds[i].Transform.Position.X <= -Grounds[i].Sprite.Texture.Width * Grounds[i].Transform.Scale.X)
-                    Grounds[i].Transform.Position = new Vector2(Grounds[i].Sprite.Texture.Width * Grounds[i].Transform.Scale.X, (GameSettings.ScreenHeight * .5f) + 150);
+                    Grounds[i].Transform.Position = new Vector2(Grounds[i].Sprite.Texture.Width * Grounds[i].Transform.Scale.X, (GameSettings.ScreenHeight * .5f) + 140);
             }
         }
 

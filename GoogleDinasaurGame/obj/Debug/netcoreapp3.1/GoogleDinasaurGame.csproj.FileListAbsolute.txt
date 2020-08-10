@@ -1,4 +1,3 @@
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Dinasaur.xnb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\GoogleDinasaurGame.exe
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\GoogleDinasaurGame.deps.json
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\GoogleDinasaurGame.runtimeconfig.json
@@ -24,7 +23,12 @@ C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\o
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp3.1\GoogleDinasaurGame.dll
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp3.1\GoogleDinasaurGame.pdb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp3.1\GoogleDinasaurGame.genruntimeconfig.cache
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Cactus.xnb
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Ground.xnb
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Cloud.xnb
-C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\ScoreFont.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sprites\Cactus.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sprites\Cloud.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sprites\Dinasaur.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sprites\Ground.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sounds\Jump.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Fonts\ScoreFont.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sounds\Death.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sounds\Restart.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp3.1\Content\Sounds\ScoreBonus.xnb

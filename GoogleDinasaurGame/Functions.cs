@@ -31,13 +31,35 @@ namespace GoogleDinasaurGame
 
         public static void RestartGame()
         {
-            DinasaurSystem.Load();
+            Functions.PlaySound(Sounds.Restart);
+            Globals.Speed = Constants.MinSpeed;
+            ScoreSystem.Score = 0;
+            Globals.GameState = GameStates.BeforeStart;
+            DinosaurSystem.State = DinosaurState.Alive;
+            DinosaurSystem.Load();
             GroundSystem.Load();
             CloudSystem.Load();
             CactusSystem.Load();
-            Globals.Speed = Constants.MinSpeed;
-            Globals.GameStarted = false;
-            Globals.Score = 0;
+        }
+
+        public static void PlaySound(Sounds sound)
+        {
+            switch (sound)
+            {
+                case Sounds.Jump:
+                    Assets.JumpSound.Pitch = (float)Globals.Random.NextDouble() - .5f;
+                    Assets.JumpSound.Play();
+                    break;
+                case Sounds.Death:
+                    Assets.DeathSound.Play();
+                    break;
+                case Sounds.Restart:
+                    Assets.RestartSound.Play();
+                    break;
+                case Sounds.ScoreBonus:
+                    Assets.ScoreBonusSound.Play();
+                    break;
+            }
         }
     }
 }

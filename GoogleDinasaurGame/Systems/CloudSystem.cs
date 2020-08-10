@@ -23,7 +23,7 @@ namespace GoogleDinasaurGame.Systems
         {
             for (int i = 0; i < Clouds.Length; i++)
             {
-                if (Globals.GameStarted)
+                if (Globals.GameState == GameStates.Running)
                     Clouds[i].Transform.Position.X -= (Globals.Speed * .1f) + Clouds[i].MoveSpeed;
                 else
                     Clouds[i].Transform.Position.X -= Clouds[i].MoveSpeed * .25f;
@@ -37,7 +37,7 @@ namespace GoogleDinasaurGame.Systems
                 Clouds[i].Transform.Position.Y += (float)Math.Sin(CloudRotationTick) * Clouds[i].BobAmount;
                 CloudRotationTick += Clouds[i].Transform.Scale.X * (float)Globals.Random.NextDouble() * .001f;
 
-                Clouds[i].Transform.Position.Y = Math.Clamp(Clouds[i].Transform.Position.Y, -1000, ((GameSettings.ScreenHeight * .5f) + 150) - (DinasaurSystem.Dinosaur.Sprite.Texture.Height * DinasaurSystem.Dinosaur.Transform.Scale.Y) * .5f);
+                Clouds[i].Transform.Position.Y = Math.Clamp(Clouds[i].Transform.Position.Y, -1000, ((GameSettings.ScreenHeight * .5f) + 140) - (DinosaurSystem.Dinosaur.Sprite.Texture.Height * DinosaurSystem.Dinosaur.Transform.Scale.Y) * .5f);
             }
         }
 
@@ -57,12 +57,22 @@ namespace GoogleDinasaurGame.Systems
             cloud.Sprite.Centered = true;
             cloud.Sprite.Effects = Functions.Choose(SpriteEffects.None, SpriteEffects.FlipHorizontally);
 
-            cloud.BobAmount = (float)Globals.Random.NextDouble();
+            cloud.BobAmount = (float)Globals.Random.NextDouble() - .5f;
 
             cloud.Transform.Scale = Vector2.One * (((float)Globals.Random.NextDouble() * 4) + .5f);
-            cloud.Transform.Position = new Vector2(
-                Globals.Random.Next(GameSettings.ScreenWidth + cloud.Sprite.Texture.Width * 5, (GameSettings.ScreenWidth * 2) + cloud.Sprite.Texture.Width * 5),
-                Globals.Random.Next(0, (int)(((GameSettings.ScreenHeight * .5f) + 150) - (DinasaurSystem.Dinosaur.Sprite.Texture.Height * DinasaurSystem.Dinosaur.Transform.Scale.Y) * .5f)));
+
+            if (Globals.GameState == GameStates.Running || Globals.GameState == GameStates.GameOver)
+            {
+                cloud.Transform.Position = new Vector2(
+                    Globals.Random.Next(GameSettings.ScreenWidth + cloud.Sprite.Texture.Width * 5, (GameSettings.ScreenWidth * 2) + cloud.Sprite.Texture.Width * 5),
+                    Globals.Random.Next(0, (int)(((GameSettings.ScreenHeight * .5f) + 140) - (DinosaurSystem.Dinosaur.Sprite.Texture.Height * DinosaurSystem.Dinosaur.Transform.Scale.Y) * .5f)));
+            }
+            else if (Globals.GameState == GameStates.BeforeStart)
+            {
+                cloud.Transform.Position = new Vector2(
+                    Globals.Random.Next(0, (GameSettings.ScreenWidth * 2)),
+                    Globals.Random.Next(0, (int)(((GameSettings.ScreenHeight * .5f) + 140) - (DinosaurSystem.Dinosaur.Sprite.Texture.Height * DinosaurSystem.Dinosaur.Transform.Scale.Y) * .5f)));
+            }
 
             cloud.Sprite.Colour = new Color(1f / cloud.Transform.Scale.X, 1f / cloud.Transform.Scale.X, 1f / cloud.Transform.Scale.X, 1f);
             

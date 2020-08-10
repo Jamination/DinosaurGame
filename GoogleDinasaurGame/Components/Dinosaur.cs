@@ -7,6 +7,9 @@
         public Hitbox Hitbox;
         
         public float VelY;
+        
+        public int DeathTimer;
+
         public bool IsOnGround;
 
         public const float Gravity = .04f;

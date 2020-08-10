@@ -17,6 +17,7 @@ namespace GoogleDinasaurGame
         {
             { "quit", new Keys[] { Keys.Escape, } },
             { "player_jump", new Keys[] { Keys.Space, Keys.Up, Keys.W, } },
+            { "restart", new Keys[] { Keys.Space, Keys.Up, Keys.W, Keys.Enter, } },
         };
 
         public static void UpdateState()
