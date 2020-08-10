@@ -5,6 +5,7 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Fonts/ScoreFont.spritefont</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ButtonHover.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Death.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Jump.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</File>
@@ -12,6 +13,8 @@
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cactus.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cloud.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/GameOver Text.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Ground.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Replay Button.png</File>
   </SourceFiles>
 </SourceFileCollection>

@@ -6,5 +6,6 @@
         Death,
         Restart,
         ScoreBonus,
+        ButtonHover,
     }
 }

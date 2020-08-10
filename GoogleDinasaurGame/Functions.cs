@@ -59,6 +59,9 @@ namespace GoogleDinasaurGame
                 case Sounds.ScoreBonus:
                     Assets.ScoreBonusSound.Play();
                     break;
+                case Sounds.ButtonHover:
+                    Assets.ButtonHover.Play();
+                    break;
             }
         }
     }

@@ -5,6 +5,8 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <LangVersion>8</LangVersion>
         <Nullable>warnings</Nullable>
+        <AssemblyName>GoogleDinosaurGame</AssemblyName>
+        <RootNamespace>GoogleDinosaurGame</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

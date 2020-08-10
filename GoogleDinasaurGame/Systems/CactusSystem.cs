@@ -21,8 +21,8 @@ namespace GoogleDinasaurGame.Systems
                 Cacti[i].Sprite.Centered = true;
                 Cacti[i].Sprite.Effects = Functions.Choose(SpriteEffects.None, SpriteEffects.FlipHorizontally);
                 
-                Cacti[i].Hitbox.AABB = new Rectangle(0, 0, Cacti[i].Sprite.Texture.Width, Cacti[i].Sprite.Texture.Height);
-            
+                Cacti[i].Hitbox.AABB = new Rectangle(0, 0, Cacti[i].Sprite.Texture.Width, Cacti[i].Sprite.Texture.Height * 2);
+                
                 Cacti[i].Transform.Scale = Vector2.One * 2;
                 Cacti[i].Transform.Position = new Vector2(
                     GameSettings.ScreenWidth + (Cacti[i].Sprite.Texture.Width * Cacti[i].Transform.Scale.X) * .5f + Globals.Random.Next(0, GameSettings.ScreenWidth * 4),

@@ -16,8 +16,8 @@ namespace GoogleDinasaurGame.Systems
         {
             Score += .1f;
 
-            TextScale = MathHelper.Lerp(TextScale, 1f, .25f);
-            TextColour = Color.Lerp(TextColour, Color.White, .25f);
+            TextScale = MathHelper.Lerp(TextScale, 1f, .1f);
+            TextColour = Color.Lerp(TextColour, Color.White, .1f);
             
             if ((int)Score == Math.Floor(Score / 50) * 50 && Score > 5 && Score != LastScore)
             {

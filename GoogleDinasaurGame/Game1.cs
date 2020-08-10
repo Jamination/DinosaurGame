@@ -41,6 +41,7 @@ namespace GoogleDinasaurGame
             DinosaurSystem.Load();
             GroundSystem.Load();
             CloudSystem.Load();
+            ReplayButtonSystem.Load();
         }
 
         protected override void Update(GameTime gameTime)
@@ -57,10 +58,12 @@ namespace GoogleDinasaurGame
             switch (Globals.GameState)
             {
                 case GameStates.BeforeStart:
+                    IsMouseVisible = false;
                     DinosaurSystem.Update();
                     CloudSystem.Update();
                     break;
                 case GameStates.Running:
+                    IsMouseVisible = false;
                     DinosaurSystem.Update();
                     CloudSystem.Update();
                     CactusSystem.Update();
@@ -69,8 +72,10 @@ namespace GoogleDinasaurGame
                     Globals.Speed = MathHelper.Lerp(Globals.Speed, Constants.MaxSpeed, .0001f);
                     break;
                 case GameStates.GameOver:
+                    IsMouseVisible = true;
                     CloudSystem.Update();
                     DinosaurSystem.Update();
+                    ReplayButtonSystem.Update();
 
                     if (Input.IsKeyPressed(Input.KeyMap["restart"]))
                         Functions.RestartGame();
@@ -91,6 +96,9 @@ namespace GoogleDinasaurGame
             CactusSystem.Draw();
             DinosaurSystem.Draw();
             ScoreSystem.Draw();
+            
+            if (Globals.GameState == GameStates.GameOver)
+                ReplayButtonSystem.Draw();
 
             Globals.SpriteBatch.End();
 
