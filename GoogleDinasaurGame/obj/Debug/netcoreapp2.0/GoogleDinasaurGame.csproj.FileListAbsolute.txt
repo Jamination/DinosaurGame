@@ -1,0 +1,12 @@
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp2.0\GoogleDinasaurGame.deps.json
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp2.0\GoogleDinasaurGame.runtimeconfig.json
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp2.0\GoogleDinasaurGame.runtimeconfig.dev.json
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp2.0\GoogleDinasaurGame.dll
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Debug\netcoreapp2.0\GoogleDinasaurGame.pdb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.csprojAssemblyReference.cache
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.AssemblyInfoInputs.cache
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.AssemblyInfo.cs
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.csproj.CoreCompileInputs.cache
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.dll
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.pdb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Debug\netcoreapp2.0\GoogleDinasaurGame.genruntimeconfig.cache
