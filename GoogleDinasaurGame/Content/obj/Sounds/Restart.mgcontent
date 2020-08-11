@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</SourceFile>
+  <SourceTime>2020-08-10T18:37:17.107042+01:00</SourceTime>
+  <DestFile>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/bin/Sounds/Restart.xnb</DestFile>
+  <DestTime>2020-08-11T23:34:35.6869906+01:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2018-12-08T16:35:54+00:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

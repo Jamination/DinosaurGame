@@ -27,13 +27,13 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
-        "MonoGame.Content.Builder": {
+        "MonoGame.Content.Builder.Task": {
           "target": "Package",
-          "version": "[3.7.0.4, )"
+          "version": "[3.8.0.1641, )"
         },
-        "MonoGame.Framework.DesktopGL.Core": {
+        "MonoGame.Framework.DesktopGL": {
           "target": "Package",
-          "version": "[3.7.0.7, )"
+          "version": "[3.8.0.1641, )"
         }
       },
       "imports": [

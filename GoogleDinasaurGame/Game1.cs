@@ -15,9 +15,6 @@ namespace GoogleDinasaurGame
             Globals.Graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             Globals.Content = Content;
-            
-            IsMouseVisible = false;
-            IsFixedTimeStep = true;
 
             Globals.Graphics.PreferredBackBufferWidth = GameSettings.ScreenWidth;
             Globals.Graphics.PreferredBackBufferHeight = GameSettings.ScreenHeight;
@@ -31,6 +28,17 @@ namespace GoogleDinasaurGame
             base.Initialize();
             Window.Title = "Google Dinosaur Game By James Heasman";
             Mouse.SetCursor(MouseCursor.FromTexture2D(Assets.CursorTexture, 0, 0));
+            
+            IsMouseVisible = false;
+            IsFixedTimeStep = true;
+            
+            Globals.Graphics.PreferredBackBufferWidth = GameSettings.ScreenWidth;
+            Globals.Graphics.PreferredBackBufferHeight = GameSettings.ScreenHeight;
+            Globals.Graphics.GraphicsProfile = GraphicsProfile.HiDef;
+            Globals.Graphics.PreferMultiSampling = true;
+            Globals.Graphics.SynchronizeWithVerticalRetrace = true;
+            
+            Globals.Graphics.ApplyChanges();
         }
 
         protected override void LoadContent()
