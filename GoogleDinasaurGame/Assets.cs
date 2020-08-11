@@ -9,7 +9,7 @@ namespace GoogleDinasaurGame
         
         public static SpriteFont ScoreFont;
 
-        public static SoundEffectInstance JumpSound, DeathSound, RestartSound, ScoreBonusSound, ButtonHover;
+        public static SoundEffectInstance JumpSound, DeathSound, RestartSound, ScoreBonusSound, ButtonHoverSound, BackgroundMusic, RainSounds;
 
         public static void Load()
         {
@@ -36,8 +36,16 @@ namespace GoogleDinasaurGame
             ScoreBonusSound = Globals.Content.Load<SoundEffect>("Sounds/ScoreBonus").CreateInstance();
             ScoreBonusSound.Volume = .5f;
             
-            ButtonHover = Globals.Content.Load<SoundEffect>("Sounds/ButtonHover").CreateInstance();
-            ButtonHover.Volume = .5f;
+            ButtonHoverSound = Globals.Content.Load<SoundEffect>("Sounds/ButtonHover").CreateInstance();
+            ButtonHoverSound.Volume = .5f;
+            
+            BackgroundMusic = Globals.Content.Load<SoundEffect>("Sounds/BackgroundMusic1").CreateInstance();
+            BackgroundMusic.Volume = .5f;
+            BackgroundMusic.IsLooped = true;
+            
+            RainSounds = Globals.Content.Load<SoundEffect>("Sounds/RainSounds").CreateInstance();
+            RainSounds.Volume = 0f;
+            RainSounds.IsLooped = true;
         }
     }
 }

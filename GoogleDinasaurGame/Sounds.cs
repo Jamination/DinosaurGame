@@ -7,5 +7,7 @@
         Restart,
         ScoreBonus,
         ButtonHover,
+        BackgroundMusic,
+        Rain,
     }
 }

@@ -7,6 +7,7 @@ namespace GoogleDinasaurGame.Components
         public Sprite Sprite;
         public Transform Transform;
         public Vector2 Velocity;
+        public Hitbox Hitbox;
 
         public const float Gravity = .02f;
         public float Speed;

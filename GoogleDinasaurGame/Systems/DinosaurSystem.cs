@@ -29,23 +29,32 @@ namespace GoogleDinasaurGame.Systems
             switch (State)
             {
                 case DinosaurState.Alive:
-                    if (Input.IsKeyPressed(Input.KeyMap["player_jump"]) && Dinosaur.Transform.Position.Y ==
-                        ((GameSettings.ScreenHeight * .5f) + 150) -
-                        (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f)
-                    {
-                        Dinosaur.VelY = Dinosaur.JumpHeight;
-                        if (Globals.GameState == GameStates.BeforeStart)
-                            Globals.GameState = GameStates.Running;
-                        Functions.PlaySound(Sounds.Jump);
-                    }
-                    else if (Input.IsKeyReleased(Input.KeyMap["player_jump"]) && Dinosaur.VelY < 0)
-                        Dinosaur.VelY *= .5f;
-
                     if (Dinosaur.Transform.Position.Y == GameSettings.ScreenHeight * .5f + 150 -
                         Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y * .5f)
                         Dinosaur.IsOnGround = true;
                     else
                         Dinosaur.IsOnGround = false;
+                    
+                    if (Input.IsKeyPressed(Input.KeyMap["player_jump"]) && Dinosaur.IsOnGround)
+                        Jump();
+                    else if (Input.IsKeyPressed(Input.KeyMap["player_jump"])  && !Dinosaur.IsOnGround)
+                    {
+                        Dinosaur.HasJumpedBeforeLanding = true;
+                        Dinosaur.JumpTick = 0;
+                    }
+                    
+                    if (Input.IsKeyReleased(Input.KeyMap["player_jump"]) && Dinosaur.VelY < 0)
+                        Dinosaur.VelY *= .5f;
+
+                    if (Dinosaur.HasJumpedBeforeLanding && Dinosaur.JumpTick <= 10 && Dinosaur.IsOnGround)
+                    {
+                        Jump();
+                        Dinosaur.JumpTick = 0;
+                        Dinosaur.HasJumpedBeforeLanding = false;
+                    }
+                    
+                    if (Dinosaur.HasJumpedBeforeLanding)
+                        Dinosaur.JumpTick++;
 
                     if (Dinosaur.Transform.Position.Y == Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y * .5f)
                         Dinosaur.VelY = Dinosaur.Gravity;
@@ -77,6 +86,14 @@ namespace GoogleDinasaurGame.Systems
                     Dinosaur.DeathTimer++;
                     break;
             }
+        }
+
+        public static void Jump()
+        {
+            Dinosaur.VelY = Dinosaur.JumpHeight;
+            if (Globals.GameState == GameStates.BeforeStart)
+                Globals.GameState = GameStates.Running;
+            Functions.PlaySound(Sounds.Jump);
         }
 
         public static void Draw()

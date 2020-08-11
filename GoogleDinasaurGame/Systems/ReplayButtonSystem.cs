@@ -48,12 +48,12 @@ namespace GoogleDinasaurGame.Systems
                     HoveringOverButton = true;
                     Functions.PlaySound(Sounds.ButtonHover);
                 }
-                ReplayButton.ReplaySprite.Colour = Color.White;
+                ReplayButton.ReplaySprite.Colour = Color.Lerp(ReplayButton.ReplaySprite.Colour, Color.White, .25f);
                 ReplayButton.ReplayTransform.Scale = Vector2.Lerp(ReplayButton.ReplayTransform.Scale, Vector2.One * 4.5f, .25f);
                 if (Input.IsLeftMouseDown())
                 {
                     ReplayButton.ReplayTransform.Scale = Vector2.Lerp(ReplayButton.ReplayTransform.Scale, Vector2.One * 3, .25f);
-                    ReplayButton.ReplaySprite.Colour = Color.Blue;
+                    ReplayButton.ReplaySprite.Colour = Color.Lerp(ReplayButton.ReplaySprite.Colour, Color.Blue, .25f);
                 }
                 else if (Input.IsLeftMouseReleased())
                 {
@@ -63,7 +63,7 @@ namespace GoogleDinasaurGame.Systems
             }
             else
             {
-                ReplayButton.ReplaySprite.Colour = Color.Gray;
+                ReplayButton.ReplaySprite.Colour = Color.Lerp(ReplayButton.ReplaySprite.Colour, Color.Gray, .25f);
                 HoveringOverButton = false;
             }
 

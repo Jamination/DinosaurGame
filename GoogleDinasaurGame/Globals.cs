@@ -13,7 +13,8 @@ namespace GoogleDinasaurGame
         public static GameWindow Window;
 
         public static float Speed = Constants.MinSpeed;
-        
+        public static float TextTick = 0f;
+
         public static Random Random = new Random();
 
         public static GameStates GameState = GameStates.BeforeStart;

@@ -7,6 +7,9 @@
         public Hitbox Hitbox;
         
         public float VelY;
+
+        public int JumpTick;
+        public bool HasJumpedBeforeLanding;
         
         public int DeathTimer;
 

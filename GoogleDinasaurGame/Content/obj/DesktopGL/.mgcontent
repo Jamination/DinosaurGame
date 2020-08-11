@@ -5,9 +5,11 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Fonts/ScoreFont.spritefont</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/BackgroundMusic1.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ButtonHover.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Death.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Jump.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/RainSounds.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ScoreBonus.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cactus.png</File>
@@ -20,6 +22,8 @@
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Splash.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

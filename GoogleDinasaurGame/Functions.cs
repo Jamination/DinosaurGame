@@ -27,6 +27,8 @@ namespace GoogleDinasaurGame
             );
         }
         
+        public static float Map(float value, float fromLow, float fromHigh, float toLow, float toHigh) => (value - fromLow) * (toHigh - toLow) / (fromHigh - fromLow) + toLow;
+        
         public static T Choose<T>(params T[] list) => list[Globals.Random.Next(0, list.ToArray().Length)];
 
         public static void RestartGame()
@@ -36,6 +38,7 @@ namespace GoogleDinasaurGame
             ScoreSystem.Score = 0;
             Globals.GameState = GameStates.BeforeStart;
             DinosaurSystem.State = DinosaurState.Alive;
+            RainSystem.DropletAmount = 0;
             DinosaurSystem.Load();
             GroundSystem.Load();
             CloudSystem.Load();
@@ -61,7 +64,13 @@ namespace GoogleDinasaurGame
                     Assets.ScoreBonusSound.Play();
                     break;
                 case Sounds.ButtonHover:
-                    Assets.ButtonHover.Play();
+                    Assets.ButtonHoverSound.Play();
+                    break;
+                case Sounds.BackgroundMusic:
+                    Assets.BackgroundMusic.Play();
+                    break;
+                case Sounds.Rain:
+                    Assets.RainSounds.Play();
                     break;
             }
         }

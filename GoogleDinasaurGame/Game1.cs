@@ -43,6 +43,9 @@ namespace GoogleDinasaurGame
             CloudSystem.Load();
             ReplayButtonSystem.Load();
             RainSystem.Load();
+            
+            Functions.PlaySound(Sounds.BackgroundMusic);
+            Functions.PlaySound(Sounds.Rain);
         }
 
         protected override void Update(GameTime gameTime)
@@ -94,17 +97,48 @@ namespace GoogleDinasaurGame
             GraphicsDevice.Clear(new Color(0f, .05f, .1f, 1f));
             
             Globals.SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
-            
-            CloudSystem.Draw();
-            GroundSystem.Draw();
-            CactusSystem.Draw();
-            DinosaurSystem.Draw();
-            RainSystem.Draw();
-            ScoreSystem.Draw();
-            
-            if (Globals.GameState == GameStates.GameOver)
-                ReplayButtonSystem.Draw();
 
+            switch (Globals.GameState)
+            {
+                case GameStates.BeforeStart:
+                    CloudSystem.Draw();
+                    GroundSystem.Draw();
+                    CactusSystem.Draw();
+                    DinosaurSystem.Draw();
+                    RainSystem.Draw();
+                    
+                    Globals.SpriteBatch.DrawString(
+                        Assets.ScoreFont,
+                        "Jump to start",
+                        new Vector2(GameSettings.ScreenWidth * .5f, GameSettings.ScreenHeight * .5f),
+                        Color.White,
+                        0f,
+                        new Vector2(Assets.ScoreFont.MeasureString(("Jump to start").ToString()).X * .5f, Assets.ScoreFont.MeasureString(("Jump to start").ToString()).Y * .5f),
+                        new Vector2((float)Math.Sin(Globals.TextTick), (float)Math.Sin(Globals.TextTick)) * .2f + (Vector2.One * 2), 
+                        SpriteEffects.None,
+                        0f
+                    );
+                    Globals.TextTick += .01f;
+                    break;
+                case GameStates.Running:
+                    CloudSystem.Draw();
+                    GroundSystem.Draw();
+                    CactusSystem.Draw();
+                    DinosaurSystem.Draw();
+                    RainSystem.Draw();
+                    ScoreSystem.Draw(); 
+                    break;
+                case GameStates.GameOver:
+                    CloudSystem.Draw();
+                    GroundSystem.Draw();
+                    CactusSystem.Draw();
+                    DinosaurSystem.Draw();
+                    RainSystem.Draw();
+                    ScoreSystem.Draw();
+                    ReplayButtonSystem.Draw();
+                    break;
+            }
+            
             Globals.SpriteBatch.End();
 
             base.Draw(gameTime);

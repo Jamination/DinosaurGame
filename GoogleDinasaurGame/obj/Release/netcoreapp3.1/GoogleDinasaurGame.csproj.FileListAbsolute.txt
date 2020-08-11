@@ -37,3 +37,5 @@ C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\b
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\GoogleDinosaurGame.pdb
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinosaurGame.dll
 C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\obj\Release\netcoreapp3.1\GoogleDinosaurGame.pdb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sounds\BackgroundMusic1.xnb
+C:\Users\james\OneDrive\Desktop\Projects\GoogleDinasaurGame\GoogleDinasaurGame\bin\Release\netcoreapp3.1\Content\Sounds\RainSounds.xnb
