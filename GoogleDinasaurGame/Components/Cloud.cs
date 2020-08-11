@@ -7,5 +7,6 @@
 
         public float MoveSpeed;
         public float BobAmount;
+        public float CloudRotationTick;
     }
 }

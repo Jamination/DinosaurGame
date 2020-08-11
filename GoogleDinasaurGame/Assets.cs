@@ -5,7 +5,19 @@ namespace GoogleDinasaurGame
 {
     public static class Assets
     {
-        public static Texture2D DinasaurTexture, CactusTexture, GroundTexture, CloudTexture, ReplayButtonTexture, GameOverTextTexture, DropletTexture, SplashTexture;
+        public static Texture2D 
+            Dinasaur1Texture,
+            Dinasaur2Texture,
+            Dinasaur3Texture,
+            CactusTexture,
+            GroundTexture,
+            CloudTexture,
+            ReplayButtonTexture,
+            GameOverTextTexture,
+            DropletTexture,
+            SplashTexture,
+            BloodTexture,
+            CursorTexture;
         
         public static SpriteFont ScoreFont;
 
@@ -13,7 +25,9 @@ namespace GoogleDinasaurGame
 
         public static void Load()
         {
-            DinasaurTexture = Globals.Content.Load<Texture2D>("Sprites/Dinasaur");
+            Dinasaur1Texture = Globals.Content.Load<Texture2D>("Sprites/Dinasaur");
+            Dinasaur2Texture = Globals.Content.Load<Texture2D>("Sprites/Dinasaur2");
+            Dinasaur3Texture = Globals.Content.Load<Texture2D>("Sprites/Dinasaur3");
             CactusTexture = Globals.Content.Load<Texture2D>("Sprites/Cactus");
             GroundTexture = Globals.Content.Load<Texture2D>("Sprites/Ground");
             CloudTexture = Globals.Content.Load<Texture2D>("Sprites/Cloud");
@@ -21,6 +35,8 @@ namespace GoogleDinasaurGame
             GameOverTextTexture = Globals.Content.Load<Texture2D>("Sprites/GameOver Text");
             DropletTexture = Globals.Content.Load<Texture2D>("Sprites/Droplet");
             SplashTexture = Globals.Content.Load<Texture2D>("Sprites/Splash");
+            BloodTexture = Globals.Content.Load<Texture2D>("Sprites/Blood");
+            CursorTexture = Globals.Content.Load<Texture2D>("Sprites/Cursor");
 
             ScoreFont = Globals.Content.Load<SpriteFont>("Fonts/ScoreFont");
 
@@ -40,7 +56,7 @@ namespace GoogleDinasaurGame
             ButtonHoverSound.Volume = .5f;
             
             BackgroundMusic = Globals.Content.Load<SoundEffect>("Sounds/BackgroundMusic1").CreateInstance();
-            BackgroundMusic.Volume = .5f;
+            BackgroundMusic.Volume = .3f;
             BackgroundMusic.IsLooped = true;
             
             RainSounds = Globals.Content.Load<SoundEffect>("Sounds/RainSounds").CreateInstance();

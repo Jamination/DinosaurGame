@@ -30,6 +30,7 @@ namespace GoogleDinasaurGame
         {
             base.Initialize();
             Window.Title = "Google Dinosaur Game By James Heasman";
+            Mouse.SetCursor(MouseCursor.FromTexture2D(Assets.CursorTexture, 0, 0));
         }
 
         protected override void LoadContent()
@@ -43,6 +44,7 @@ namespace GoogleDinasaurGame
             CloudSystem.Load();
             ReplayButtonSystem.Load();
             RainSystem.Load();
+            GoreSystem.Load();
             
             Functions.PlaySound(Sounds.BackgroundMusic);
             Functions.PlaySound(Sounds.Rain);
@@ -65,7 +67,6 @@ namespace GoogleDinasaurGame
                     IsMouseVisible = false;
                     DinosaurSystem.Update();
                     CloudSystem.Update();
-                    RainSystem.Update();
                     break;
                 case GameStates.Running:
                     IsMouseVisible = false;
@@ -83,6 +84,7 @@ namespace GoogleDinasaurGame
                     DinosaurSystem.Update();
                     RainSystem.Update();
                     ReplayButtonSystem.Update();
+                    GoreSystem.Update();
 
                     if (Input.IsKeyPressed(Input.KeyMap["restart"]))
                         Functions.RestartGame();
@@ -105,7 +107,7 @@ namespace GoogleDinasaurGame
                     GroundSystem.Draw();
                     CactusSystem.Draw();
                     DinosaurSystem.Draw();
-                    RainSystem.Draw();
+                    ScoreSystem.Draw(); 
                     
                     Globals.SpriteBatch.DrawString(
                         Assets.ScoreFont,
@@ -132,6 +134,7 @@ namespace GoogleDinasaurGame
                     CloudSystem.Draw();
                     GroundSystem.Draw();
                     CactusSystem.Draw();
+                    GoreSystem.Draw();
                     DinosaurSystem.Draw();
                     RainSystem.Draw();
                     ScoreSystem.Draw();

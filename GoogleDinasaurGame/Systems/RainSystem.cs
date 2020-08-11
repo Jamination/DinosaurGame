@@ -1,12 +1,13 @@
 ﻿using System;
 using GoogleDinasaurGame.Components;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace GoogleDinasaurGame.Systems
 {
     public static class RainSystem
     {
-        public static Droplet[] RainDroplets = new Droplet[10000];
+        public static Droplet[] RainDroplets = new Droplet[20000];
 
         public static float DropletAmount = 0f;
 
@@ -14,7 +15,7 @@ namespace GoogleDinasaurGame.Systems
         {
             for (int i = 0; i < RainDroplets.Length; i++)
             {
-                RainDroplets[i] = NewDroplet(ref RainDroplets[i]);
+                NewDroplet(ref RainDroplets[i]);
             }
         }
 
@@ -27,7 +28,7 @@ namespace GoogleDinasaurGame.Systems
                     RainDroplets[i].SplashTimer++;
                     
                     if (RainDroplets[i].SplashTimer >= 10)
-                        RainDroplets[i] = NewDroplet(ref RainDroplets[i]);
+                        NewDroplet(ref RainDroplets[i]);
 
                     if (Globals.GameState == GameStates.Running)
                         RainDroplets[i].Transform.Position.X -= Globals.Speed;
@@ -90,6 +91,7 @@ namespace GoogleDinasaurGame.Systems
         {
             droplet.Splashed = true;
             droplet.Sprite.Texture = Assets.SplashTexture;
+            droplet.Sprite.Effects = Functions.Choose(SpriteEffects.None, SpriteEffects.FlipHorizontally);
             droplet.Sprite.Colour = new Color(1f, 1f, 1f, (float)Globals.Random.NextDouble() * .7f);
             droplet.Velocity = Vector2.Zero;
             droplet.Sprite.Colour = Color.Lerp(droplet.Sprite.Colour,

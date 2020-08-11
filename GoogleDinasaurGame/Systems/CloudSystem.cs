@@ -7,9 +7,7 @@ namespace GoogleDinasaurGame.Systems
 {
     public static class CloudSystem
     {
-        public static Cloud[] Clouds = new Cloud[20];
-
-        public static float CloudRotationTick = 0f;
+        public static Cloud[] Clouds = new Cloud[50];
 
         public static void Load()
         {
@@ -34,8 +32,8 @@ namespace GoogleDinasaurGame.Systems
                     Clouds[i] = NewCloud();
                 }
 
-                Clouds[i].Transform.Position.Y += (float)Math.Sin(CloudRotationTick) * Clouds[i].BobAmount;
-                CloudRotationTick += Clouds[i].Transform.Scale.X * (float)Globals.Random.NextDouble() * .001f;
+                Clouds[i].Transform.Position.Y += (float)Math.Sin(Clouds[i].CloudRotationTick) * Clouds[i].BobAmount;
+                Clouds[i].CloudRotationTick += Clouds[i].Transform.Scale.X * (float)Globals.Random.NextDouble() * .01f;
 
                 Clouds[i].Transform.Position.Y = Math.Clamp(Clouds[i].Transform.Position.Y, -1000, ((GameSettings.ScreenHeight * .5f) + 140) - (DinosaurSystem.Dinosaur.Sprite.Texture.Height * DinosaurSystem.Dinosaur.Transform.Scale.Y) * .5f);
             }
@@ -74,7 +72,7 @@ namespace GoogleDinasaurGame.Systems
                     Globals.Random.Next(0, (int)(((GameSettings.ScreenHeight * .5f) + 140) - (DinosaurSystem.Dinosaur.Sprite.Texture.Height * DinosaurSystem.Dinosaur.Transform.Scale.Y) * .5f)));
             }
 
-            cloud.Sprite.Colour = new Color(1f / cloud.Transform.Scale.X, 1f / cloud.Transform.Scale.X, 1f / cloud.Transform.Scale.X, 1f);
+            cloud.Sprite.Colour = new Color(1f, 1f, 1f, cloud.Transform.Scale.X % 1);
             
             cloud.MoveSpeed = cloud.Transform.Scale.X * .25f;
             return cloud;

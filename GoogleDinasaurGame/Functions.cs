@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using GoogleDinasaurGame.Components;
 using GoogleDinasaurGame.Systems;
 using Microsoft.Xna.Framework;
@@ -35,15 +36,19 @@ namespace GoogleDinasaurGame
         {
             Functions.PlaySound(Sounds.Restart);
             Globals.Speed = Constants.MinSpeed;
+            ScoreSystem.HighScore = (int)Math.Max(ScoreSystem.HighScore, ScoreSystem.Score);
             ScoreSystem.Score = 0;
             Globals.GameState = GameStates.BeforeStart;
             DinosaurSystem.State = DinosaurState.Alive;
             RainSystem.DropletAmount = 0;
+            GoreSystem.BloodAmount = 0;
+            Assets.RainSounds.Volume = 0f;
             DinosaurSystem.Load();
             GroundSystem.Load();
             CloudSystem.Load();
             CactusSystem.Load();
             RainSystem.Load();
+            GoreSystem.Load();
         }
 
         public static void PlaySound(Sounds sound)

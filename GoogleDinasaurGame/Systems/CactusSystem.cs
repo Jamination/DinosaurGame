@@ -54,6 +54,7 @@ namespace GoogleDinasaurGame.Systems
                     Globals.GameState = GameStates.GameOver;
                     Functions.PlaySound(Sounds.Death);
                     DinosaurSystem.State = DinosaurState.Dead;
+                    DinosaurSystem.Kill();
                 }
             }
         }
