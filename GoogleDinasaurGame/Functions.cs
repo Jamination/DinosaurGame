@@ -40,6 +40,7 @@ namespace GoogleDinasaurGame
             ScoreSystem.Score = 0;
             Globals.GameState = GameStates.BeforeStart;
             DinosaurSystem.State = DinosaurState.Alive;
+            LightningSystem.State = LightningState.Docile;
             RainSystem.DropletAmount = 0;
             GoreSystem.BloodAmount = 0;
             Assets.RainSounds.Volume = 0f;
@@ -49,6 +50,7 @@ namespace GoogleDinasaurGame
             CactusSystem.Load();
             RainSystem.Load();
             GoreSystem.Load();
+            LightningSystem.Load();
         }
 
         public static void PlaySound(Sounds sound)
@@ -76,6 +78,9 @@ namespace GoogleDinasaurGame
                     break;
                 case Sounds.Rain:
                     Assets.RainSounds.Play();
+                    break;
+                case Sounds.Lightning:
+                    Assets.LightningStrikeSound.Play();
                     break;
             }
         }

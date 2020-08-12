@@ -17,11 +17,13 @@ namespace GoogleDinasaurGame
             DropletTexture,
             SplashTexture,
             BloodTexture,
-            CursorTexture;
+            CursorTexture,
+            Lightning1Texture,
+            Lightning2Texture;
         
         public static SpriteFont ScoreFont;
 
-        public static SoundEffectInstance JumpSound, DeathSound, RestartSound, ScoreBonusSound, ButtonHoverSound, BackgroundMusic, RainSounds;
+        public static SoundEffectInstance JumpSound, DeathSound, RestartSound, ScoreBonusSound, ButtonHoverSound, BackgroundMusic, RainSounds, LightningStrikeSound;
 
         public static void Load()
         {
@@ -37,6 +39,8 @@ namespace GoogleDinasaurGame
             SplashTexture = Globals.Content.Load<Texture2D>("Sprites/Splash");
             BloodTexture = Globals.Content.Load<Texture2D>("Sprites/Blood");
             CursorTexture = Globals.Content.Load<Texture2D>("Sprites/Cursor");
+            Lightning1Texture = Globals.Content.Load<Texture2D>("Sprites/Lightning1");
+            Lightning2Texture = Globals.Content.Load<Texture2D>("Sprites/Lightning2");
 
             ScoreFont = Globals.Content.Load<SpriteFont>("Fonts/ScoreFont");
 
@@ -54,6 +58,9 @@ namespace GoogleDinasaurGame
             
             ButtonHoverSound = Globals.Content.Load<SoundEffect>("Sounds/ButtonHover").CreateInstance();
             ButtonHoverSound.Volume = .5f;
+            
+            LightningStrikeSound = Globals.Content.Load<SoundEffect>("Sounds/LightningStrike").CreateInstance();
+            LightningStrikeSound.Volume = .5f;
             
             BackgroundMusic = Globals.Content.Load<SoundEffect>("Sounds/BackgroundMusic1").CreateInstance();
             BackgroundMusic.Volume = .3f;

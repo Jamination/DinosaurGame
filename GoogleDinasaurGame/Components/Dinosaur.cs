@@ -13,11 +13,13 @@ namespace GoogleDinasaurGame.Components
         public int JumpTick;
         public bool HasJumpedBeforeLanding;
         
-        public int DeathTimer, AnimationTimer;
+        public int AnimationTimer;
 
         public bool IsOnGround, DiedOnGround;
         
         public const float Gravity = .04f;
         public const float JumpHeight = -1f;
+
+        public Color ColourToLerpTo;
     }
 }

@@ -9,5 +9,6 @@
         ButtonHover,
         BackgroundMusic,
         Rain,
+        Lightning,
     }
 }

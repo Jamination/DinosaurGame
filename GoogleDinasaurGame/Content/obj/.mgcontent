@@ -9,6 +9,7 @@
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ButtonHover.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Death.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Jump.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/LightningStrike.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/RainSounds.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ScoreBonus.wav</File>
@@ -22,10 +23,15 @@
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Droplet.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/GameOver Text.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Ground.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Lightning1.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Lightning2.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Replay Button.png</File>
     <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Splash.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

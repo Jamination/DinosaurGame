@@ -53,6 +53,7 @@ namespace GoogleDinasaurGame
             ReplayButtonSystem.Load();
             RainSystem.Load();
             GoreSystem.Load();
+            LightningSystem.Load();
             
             Functions.PlaySound(Sounds.BackgroundMusic);
             Functions.PlaySound(Sounds.Rain);
@@ -84,6 +85,7 @@ namespace GoogleDinasaurGame
                     RainSystem.Update();
                     GroundSystem.Update();
                     ScoreSystem.Update();
+                    LightningSystem.Update();
                     Globals.Speed = MathHelper.Lerp(Globals.Speed, Constants.MaxSpeed, .0001f);
                     break;
                 case GameStates.GameOver:
@@ -93,6 +95,7 @@ namespace GoogleDinasaurGame
                     RainSystem.Update();
                     ReplayButtonSystem.Update();
                     GoreSystem.Update();
+                    LightningSystem.Update();
 
                     if (Input.IsKeyPressed(Input.KeyMap["restart"]))
                         Functions.RestartGame();
@@ -104,9 +107,11 @@ namespace GoogleDinasaurGame
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(new Color(0f, .05f, .1f, 1f));
-            
-            Globals.SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
+            if (LightningSystem.State != LightningState.Flash)
+            {
+                GraphicsDevice.Clear(new Color(0f, .05f, .1f, 1f));
+                
+                            Globals.SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
 
             switch (Globals.GameState)
             {
@@ -134,6 +139,7 @@ namespace GoogleDinasaurGame
                     CloudSystem.Draw();
                     GroundSystem.Draw();
                     CactusSystem.Draw();
+                    LightningSystem.Draw();
                     DinosaurSystem.Draw();
                     RainSystem.Draw();
                     ScoreSystem.Draw(); 
@@ -143,6 +149,7 @@ namespace GoogleDinasaurGame
                     GroundSystem.Draw();
                     CactusSystem.Draw();
                     GoreSystem.Draw();
+                    LightningSystem.Draw();
                     DinosaurSystem.Draw();
                     RainSystem.Draw();
                     ScoreSystem.Draw();
@@ -151,7 +158,10 @@ namespace GoogleDinasaurGame
             }
             
             Globals.SpriteBatch.End();
-
+            }
+            else
+                Globals.Graphics.GraphicsDevice.Clear(Color.White);
+            
             base.Draw(gameTime);
         }
     }

@@ -24,10 +24,12 @@ namespace GoogleDinasaurGame.Systems
             
             Dinosaur.Transform.Position = new Vector2(Dinosaur.Sprite.Texture.Width * 4, ((GameSettings.ScreenHeight * .5f) + 150) - (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f);
             Dinosaur.Transform.Scale = Vector2.One * 2;
+            Dinosaur.ColourToLerpTo = Color.White;
         }
 
         public static void Update()
         {
+            Dinosaur.Sprite.Colour = Color.Lerp(Dinosaur.Sprite.Colour, Dinosaur.ColourToLerpTo, .001f);
             switch (State)
             {
                 case DinosaurState.Alive:
@@ -108,25 +110,14 @@ namespace GoogleDinasaurGame.Systems
                         MathHelper.Clamp(Dinosaur.Transform.Position.X, 0, GameSettings.ScreenWidth);
                     break;
                 case DinosaurState.Dead:
-                    if (Dinosaur.Transform.Position.Y == GameSettings.ScreenHeight * .5f + 150 -
+                    if (Dinosaur.Transform.Position.Y == GameSettings.ScreenHeight * .5f + 180 -
                         Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y * .5f)
                         Dinosaur.IsOnGround = true;
                     else
                         Dinosaur.IsOnGround = false;
                     
-                    switch (Dinosaur.DeathTimer)
-                    {
-                        case 12:
-                            Dinosaur.DeathTimer = 0;
-                            break;
-                        case 6:
-                            Dinosaur.Sprite.Colour = Color.Black;
-                            break;
-                        case 3:
-                            Dinosaur.Sprite.Colour = Color.DarkRed;
-                            break;
-                    }
-                    
+                    Dinosaur.ColourToLerpTo = Color.DarkRed;
+
                     Dinosaur.Transform.Rotation += MathHelper.ToRadians(20) * Dinosaur.Velocity.X;
                     Dinosaur.Transform.Scale = Vector2.Lerp(Dinosaur.Transform.Scale, Vector2.One * 2, .25f);
 
@@ -145,10 +136,8 @@ namespace GoogleDinasaurGame.Systems
                     Dinosaur.Transform.Position.Y = Math.Clamp(
                         Dinosaur.Transform.Position.Y,
                         (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f,
-                        ((GameSettings.ScreenHeight * .5f) + 150) - (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f
+                        ((GameSettings.ScreenHeight * .5f) + 180) - (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f
                     );
-                    
-                    Dinosaur.DeathTimer++;
                     break;
             }
         }

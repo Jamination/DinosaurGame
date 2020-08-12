@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Ground.png</SourceFile>
-  <SourceTime>2020-08-10T12:44:41.0588484+01:00</SourceTime>
-  <DestFile>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/bin/Sprites/Ground.xnb</DestFile>
-  <DestTime>2020-08-12T14:01:02.2250148+01:00</DestTime>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Lightning1.png</SourceFile>
+  <SourceTime>2020-08-12T13:58:52.0142574+01:00</SourceTime>
+  <DestFile>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/bin/DesktopGL/Content/Sprites/Lightning1.xnb</DestFile>
+  <DestTime>2020-08-12T14:27:19.3873309+01:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2018-12-08T16:35:54+00:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+01:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

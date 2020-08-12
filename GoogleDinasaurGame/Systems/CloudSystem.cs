@@ -32,8 +32,8 @@ namespace GoogleDinasaurGame.Systems
                     Clouds[i] = NewCloud();
                 }
 
-                Clouds[i].Transform.Position.Y += (float)Math.Sin(Clouds[i].CloudRotationTick) * Clouds[i].BobAmount;
-                Clouds[i].CloudRotationTick += Clouds[i].Transform.Scale.X * (float)Globals.Random.NextDouble() * .01f;
+                Clouds[i].Transform.Position.Y += (float)Math.Sin(Clouds[i].CloudPositionTick) * Clouds[i].BobAmount;
+                Clouds[i].CloudPositionTick += Clouds[i].Transform.Scale.X * (float)Globals.Random.NextDouble() * .01f;
 
                 Clouds[i].Transform.Position.Y = Math.Clamp(Clouds[i].Transform.Position.Y, -1000, ((GameSettings.ScreenHeight * .5f) + 140) - (DinosaurSystem.Dinosaur.Sprite.Texture.Height * DinosaurSystem.Dinosaur.Transform.Scale.Y) * .5f);
             }
