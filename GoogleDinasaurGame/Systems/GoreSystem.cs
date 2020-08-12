@@ -60,7 +60,7 @@ namespace GoogleDinasaurGame.Systems
                 Functions.DrawSprite(ref Gore[i].Sprite, ref Gore[i].Transform);
         }
 
-        public static Blood NewBlood(ref Blood blood)
+        public static void NewBlood(ref Blood blood)
         {
             blood = new Blood();
             
@@ -76,8 +76,6 @@ namespace GoogleDinasaurGame.Systems
             
             blood.Velocity = new Vector2((float)Globals.Random.NextDouble() - .75f, -(float)Globals.Random.NextDouble() * .75f);
             blood.YMargin = Globals.Random.Next(0, 32);
-            
-            return blood;
         }
     }
 }

@@ -48,12 +48,12 @@ namespace GoogleDinasaurGame.Systems
                         var cactusAABB = new Rectangle(CactusSystem.Cacti[j].Transform.Position.ToPoint(), CactusSystem.Cacti[j].Sprite.Texture.Bounds.Size * CactusSystem.Cacti[j].Transform.Scale.ToPoint());
 
                         if (dropletAABB.Intersects(cactusAABB))
-                            RainDroplets[i] = Splash(ref RainDroplets[i]);
+                            Splash(ref RainDroplets[i]);
                     }
 
                     if (RainDroplets[i].Transform.Position.Y >= GameSettings.ScreenHeight * .5f + 140 || dropletAABB.Intersects(dinasaurAABB))
                     {
-                        RainDroplets[i] = Splash(ref RainDroplets[i]);
+                        Splash(ref RainDroplets[i]);
                     }
                 }
             }
@@ -70,7 +70,7 @@ namespace GoogleDinasaurGame.Systems
             }
         }
 
-        public static Droplet NewDroplet(ref Droplet droplet)
+        public static void NewDroplet(ref Droplet droplet)
         {
             droplet.Sprite.Texture = Assets.DropletTexture;
             droplet.Sprite.Colour = new Color(1f, 1f, 1f, (float)Globals.Random.NextDouble() * .15f);
@@ -83,11 +83,9 @@ namespace GoogleDinasaurGame.Systems
             droplet.Transform.Scale = Vector2.One;
             droplet.Transform.Position = new Vector2(Globals.Random.Next((int)(GameSettings.ScreenWidth), (int)(GameSettings.ScreenWidth * 2)), Globals.Random.Next(-GameSettings.ScreenHeight * 8, -droplet.Sprite.Texture.Height));
             droplet.Speed = (float)Globals.Random.NextDouble() + .5f;
-            
-            return droplet;
         }
 
-        public static Droplet Splash(ref Droplet droplet)
+        public static void Splash(ref Droplet droplet)
         {
             droplet.Splashed = true;
             droplet.Sprite.Texture = Assets.SplashTexture;
@@ -96,8 +94,6 @@ namespace GoogleDinasaurGame.Systems
             droplet.Velocity = Vector2.Zero;
             droplet.Sprite.Colour = Color.Lerp(droplet.Sprite.Colour,
                 new Color(1f, 1f, 1f, 0f), .75f);
-            
-            return droplet;
         }
     }
 }

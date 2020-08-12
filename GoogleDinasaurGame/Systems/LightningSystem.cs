@@ -11,7 +11,7 @@ namespace GoogleDinasaurGame.Systems
         
         public static void Load()
         {
-            Lightning = NewLightning();
+            NewLightning(ref Lightning);
         }
 
         public static void Update()
@@ -35,7 +35,7 @@ namespace GoogleDinasaurGame.Systems
                     if (Lightning.FlashTime >= 4)
                     {
                         State = LightningState.Docile;
-                        Lightning = NewLightning();
+                        NewLightning(ref Lightning);
                     }
                     Lightning.FlashTime++;
                     break;
@@ -54,10 +54,8 @@ namespace GoogleDinasaurGame.Systems
             Functions.PlaySound(Sounds.Lightning);
         }
 
-        public static LightningStrike NewLightning()
+        public static void NewLightning(ref LightningStrike lightningStrike)
         {
-            var lightningStrike = new LightningStrike();
-
             lightningStrike.Sprite.Texture = Functions.Choose(Assets.Lightning1Texture, Assets.Lightning2Texture);
             lightningStrike.Sprite.Effects = Functions.Choose(SpriteEffects.None, SpriteEffects.FlipHorizontally);
             lightningStrike.Sprite.Colour = Color.White;
@@ -69,8 +67,6 @@ namespace GoogleDinasaurGame.Systems
 
             lightningStrike.Timer = 0;
             lightningStrike.StrikeTime = Globals.Random.Next(960, 2048);
-            
-            return lightningStrike;
         }
     }
 }
