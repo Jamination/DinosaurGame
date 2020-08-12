@@ -96,6 +96,8 @@ namespace GoogleDinasaurGame.Systems
             
                     Dinosaur.Transform.Position += Dinosaur.Velocity * Time.DeltaTime;
 
+                    Dinosaur.Transform.Scale = Vector2.Lerp(Dinosaur.Transform.Scale, Vector2.One * 2, .25f);
+
                     Dinosaur.Transform.Position.Y = Math.Clamp(
                         Dinosaur.Transform.Position.Y,
                         (Dinosaur.Sprite.Texture.Height * Dinosaur.Transform.Scale.Y) * .5f,
@@ -126,6 +128,7 @@ namespace GoogleDinasaurGame.Systems
                     }
                     
                     Dinosaur.Transform.Rotation += MathHelper.ToRadians(20) * Dinosaur.Velocity.X;
+                    Dinosaur.Transform.Scale = Vector2.Lerp(Dinosaur.Transform.Scale, Vector2.One * 2, .25f);
 
                     if (Dinosaur.IsOnGround && !Dinosaur.DiedOnGround)
                     {
@@ -165,6 +168,7 @@ namespace GoogleDinasaurGame.Systems
         public static void Jump()
         {
             Dinosaur.Velocity.Y = Dinosaur.JumpHeight;
+            Dinosaur.Transform.Scale.X = 1f;
             if (Globals.GameState == GameStates.BeforeStart)
                 Globals.GameState = GameStates.Running;
             Functions.PlaySound(Sounds.Jump);

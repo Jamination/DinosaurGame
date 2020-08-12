@@ -41,11 +41,11 @@ namespace GoogleDinasaurGame.Systems
                     RainDroplets[i].Transform.Position += RainDroplets[i].Velocity * Time.DeltaTime;
                     
                     var dropletAABB = new Rectangle(RainDroplets[i].Transform.Position.ToPoint(), RainDroplets[i].Hitbox.AABB.Size * RainDroplets[i].Transform.Scale.ToPoint());
-                    var dinasaurAABB = new Rectangle(DinosaurSystem.Dinosaur.Transform.Position.ToPoint(), DinosaurSystem.Dinosaur.Hitbox.AABB.Size);
+                    var dinasaurAABB = new Rectangle(DinosaurSystem.Dinosaur.Transform.Position.ToPoint(), DinosaurSystem.Dinosaur.Sprite.Texture.Bounds.Size * DinosaurSystem.Dinosaur.Transform.Scale.ToPoint());
 
                     for (int j = 0; j < CactusSystem.Cacti.Length; j++)
                     {
-                        var cactusAABB = new Rectangle(CactusSystem.Cacti[j].Transform.Position.ToPoint(), CactusSystem.Cacti[j].Hitbox.AABB.Size * CactusSystem.Cacti[j].Transform.Scale.ToPoint());
+                        var cactusAABB = new Rectangle(CactusSystem.Cacti[j].Transform.Position.ToPoint(), CactusSystem.Cacti[j].Sprite.Texture.Bounds.Size * CactusSystem.Cacti[j].Transform.Scale.ToPoint());
 
                         if (dropletAABB.Intersects(cactusAABB))
                             RainDroplets[i] = Splash(ref RainDroplets[i]);
