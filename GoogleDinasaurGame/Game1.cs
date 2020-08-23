@@ -101,7 +101,6 @@ namespace GoogleDinasaurGame
                         Functions.RestartGame();
                     break;
             }
-
             base.Update(gameTime);
         }
 
@@ -120,7 +119,7 @@ namespace GoogleDinasaurGame
                     GroundSystem.Draw();
                     CactusSystem.Draw();
                     DinosaurSystem.Draw();
-                    ScoreSystem.Draw(); 
+                    ScoreSystem.Draw();
                     
                     Globals.SpriteBatch.DrawString(
                         Assets.ScoreFont,

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WrD13CNRMvcRb+MoQ9TDYsNO+iiWODxTnuC3eNdE6H2boqhqoJKL27jzQAerKfwydvP3msGDsZHT7hhSmLGkxA==",
+  "dgSpecHash": "aPW7uL8H6IpwMfO47w4/rVyW5RuvTMI3tgX4rYCfN/jQw2bBg1u3kOcGatViVaLMZim+SAG8N+5MNieiHkTzOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\james\\OneDrive\\Desktop\\Projects\\GoogleDinasaurGame\\GoogleDinasaurGame\\GoogleDinasaurGame.csproj",
+  "projectFilePath": "C:\\Users\\james\\OneDrive\\Desktop\\Github\\DinosaurGame\\GoogleDinasaurGame\\GoogleDinasaurGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"

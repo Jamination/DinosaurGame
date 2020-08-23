@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\james\\OneDrive\\Desktop\\Projects\\GoogleDinasaurGame\\GoogleDinasaurGame\\GoogleDinasaurGame.csproj",
+    "projectUniqueName": "C:\\Users\\james\\OneDrive\\Desktop\\Github\\DinosaurGame\\GoogleDinasaurGame\\GoogleDinasaurGame.csproj",
     "projectName": "GoogleDinosaurGame",
-    "projectPath": "C:\\Users\\james\\OneDrive\\Desktop\\Projects\\GoogleDinasaurGame\\GoogleDinasaurGame\\GoogleDinasaurGame.csproj",
-    "outputPath": "C:\\Users\\james\\OneDrive\\Desktop\\Projects\\GoogleDinasaurGame\\GoogleDinasaurGame\\obj\\",
+    "projectPath": "C:\\Users\\james\\OneDrive\\Desktop\\Github\\DinosaurGame\\GoogleDinasaurGame\\GoogleDinasaurGame.csproj",
+    "outputPath": "C:\\Users\\james\\OneDrive\\Desktop\\Github\\DinosaurGame\\GoogleDinasaurGame\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -51,7 +51,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
     }
   }
 }

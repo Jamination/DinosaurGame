@@ -8,7 +8,9 @@ namespace GoogleDinasaurGame.Systems
 {
     public static class CactusSystem
     {
-        public static Cactus[] Cacti = new Cactus[5];
+        public static Cactus[] Cacti = new Cactus[Constants.MaxCacti];
+
+        public static float AmountOfCacti = 0f;
         
         public static void Load()
         {
@@ -33,7 +35,7 @@ namespace GoogleDinasaurGame.Systems
 
         public static void Update()
         {
-            for (int i = 0; i < Cacti.Length; i++)
+            for (int i = 0; i < AmountOfCacti; i++)
             {
                 Cacti[i].Transform.Position.X -= Globals.Speed;
 
@@ -57,11 +59,14 @@ namespace GoogleDinasaurGame.Systems
                     DinosaurSystem.Kill();
                 }
             }
+
+            AmountOfCacti += .01f;
+            AmountOfCacti = Math.Clamp(AmountOfCacti, 0, Constants.MaxCacti);
         }
 
         public static void Draw()
         {
-            for (int i = 0; i < Cacti.Length; i++)
+            for (int i = 0; i < AmountOfCacti; i++)
                 Functions.DrawSprite(ref Cacti[i].Sprite, ref Cacti[i].Transform);
         }
     }

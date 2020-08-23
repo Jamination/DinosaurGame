@@ -4,29 +4,29 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Fonts/ScoreFont.spritefont</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/BackgroundMusic1.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ButtonHover.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Death.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Jump.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/LightningStrike.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/RainSounds.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sounds/ScoreBonus.wav</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Blood.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cactus.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cloud.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Cursor.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur2.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur3.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Droplet.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/GameOver Text.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Ground.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Lightning1.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Lightning2.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Replay Button.png</File>
-    <File>C:/Users/james/OneDrive/Desktop/Projects/GoogleDinasaurGame/GoogleDinasaurGame/Content/Sprites/Splash.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Fonts/ScoreFont.spritefont</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/BackgroundMusic1.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/ButtonHover.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/Death.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/Jump.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/LightningStrike.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/RainSounds.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/Restart.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sounds/ScoreBonus.wav</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Blood.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Cactus.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Cloud.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Cursor.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur2.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Dinasaur3.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Droplet.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/GameOver Text.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Ground.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Lightning1.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Lightning2.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Replay Button.png</File>
+    <File>C:/Users/james/OneDrive/Desktop/Github/DinosaurGame/GoogleDinasaurGame/Content/Sprites/Splash.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
