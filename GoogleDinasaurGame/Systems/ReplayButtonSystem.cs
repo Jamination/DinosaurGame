@@ -74,8 +74,8 @@ namespace GoogleDinasaurGame.Systems
 
         public static void Draw()
         {
-            Functions.DrawSprite(ref ReplayButton.ReplaySprite, ref ReplayButton.ReplayTransform);
-            Functions.DrawSprite(ref ReplayButton.GameOverSprite, ref ReplayButton.GameOverTransform);
+            Functions.Draw(ref ReplayButton.ReplaySprite, ref ReplayButton.ReplayTransform);
+            Functions.Draw(ref ReplayButton.GameOverSprite, ref ReplayButton.GameOverTransform);
         }
     }
 }

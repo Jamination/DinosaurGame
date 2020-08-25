@@ -57,7 +57,7 @@ namespace GoogleDinasaurGame.Systems
         public static void Draw()
         {
             for (int i = 0; i < (int)BloodAmount; i++)
-                Functions.DrawSprite(ref Gore[i].Sprite, ref Gore[i].Transform);
+                Functions.Draw(ref Gore[i].Sprite, ref Gore[i].Transform);
         }
 
         public static void NewBlood(ref Blood blood)

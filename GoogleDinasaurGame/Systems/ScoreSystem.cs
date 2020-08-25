@@ -17,7 +17,7 @@ namespace GoogleDinasaurGame.Systems
         {
             Score += Time.DeltaTime * .005f;
 
-            if ((int)Score == Math.Floor(Score / 50) * 50 && Score > 5 && Score != LastScore)
+            if (Convert.ToString((int)Score).Contains("69") && Score != LastScore)
             {
                 LastScore = Score;
                 TextScale = 1.5f;

@@ -45,6 +45,9 @@ namespace GoogleDinasaurGame.Systems
 
                     for (int j = 0; j < CactusSystem.Cacti.Length; j++)
                     {
+                        if (!CactusSystem.Cacti[j].Active)
+                            continue;
+                        
                         var cactusAABB = new Rectangle(CactusSystem.Cacti[j].Transform.Position.ToPoint(), CactusSystem.Cacti[j].Sprite.Texture.Bounds.Size * CactusSystem.Cacti[j].Transform.Scale.ToPoint());
 
                         if (dropletAABB.Intersects(cactusAABB))
@@ -66,7 +69,7 @@ namespace GoogleDinasaurGame.Systems
         {
             for (int i = 0; i < DropletAmount; i++)
             {
-                Functions.DrawSprite(ref RainDroplets[i].Sprite, ref RainDroplets[i].Transform);
+                Functions.Draw(ref RainDroplets[i].Sprite, ref RainDroplets[i].Transform);
             }
         }
 

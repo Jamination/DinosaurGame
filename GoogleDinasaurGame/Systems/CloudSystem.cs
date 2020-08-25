@@ -43,7 +43,7 @@ namespace GoogleDinasaurGame.Systems
         {
             for (int i = 0; i < Clouds.Length; i++)
             {
-                Functions.DrawSprite(ref Clouds[i].Sprite, ref Clouds[i].Transform);
+                Functions.Draw(ref Clouds[i].Sprite, ref Clouds[i].Transform);
             }
         }
 

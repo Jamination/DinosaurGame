@@ -45,7 +45,7 @@ namespace GoogleDinasaurGame.Systems
         public static void Draw()
         {
             if (State == LightningState.Active)
-                Functions.DrawSprite(ref Lightning.Sprite, ref Lightning.Transform);
+                Functions.Draw(ref Lightning.Sprite, ref Lightning.Transform);
         }
 
         public static void Strike()

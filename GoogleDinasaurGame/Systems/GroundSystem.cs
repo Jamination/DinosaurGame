@@ -37,7 +37,7 @@ namespace GoogleDinasaurGame.Systems
         {
             for (int i = 0; i < Grounds.Length; i++)
             {
-                Functions.DrawSprite(ref Grounds[i].Sprite, ref Grounds[i].Transform);
+                Functions.Draw(ref Grounds[i].Sprite, ref Grounds[i].Transform);
             }
         }
     }

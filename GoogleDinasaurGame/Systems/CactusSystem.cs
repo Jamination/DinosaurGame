@@ -10,13 +10,14 @@ namespace GoogleDinasaurGame.Systems
     {
         public static Cactus[] Cacti = new Cactus[Constants.MaxCacti];
 
-        public static float AmountOfCacti = 0f;
+        public static float AmountOfCacti = 1f;
         
         public static void Load()
         {
             for (int i = 0; i < Cacti.Length; i++)
             {
                 Cacti[i] = new Cactus();
+                Cacti[i].Active = false;
             
                 Cacti[i].Sprite.Texture = Assets.CactusTexture;
                 Cacti[i].Sprite.Colour = Color.White;
@@ -35,8 +36,9 @@ namespace GoogleDinasaurGame.Systems
 
         public static void Update()
         {
-            for (int i = 0; i < AmountOfCacti; i++)
+            for (int i = 0; i < (int)AmountOfCacti; i++)
             {
+                Cacti[i].Active = true;
                 Cacti[i].Transform.Position.X -= Globals.Speed;
 
                 if (Cacti[i].Transform.Position.X <=
@@ -60,14 +62,14 @@ namespace GoogleDinasaurGame.Systems
                 }
             }
 
-            AmountOfCacti += .01f;
+            AmountOfCacti += .002f;
             AmountOfCacti = Math.Clamp(AmountOfCacti, 0, Constants.MaxCacti);
         }
 
         public static void Draw()
         {
-            for (int i = 0; i < AmountOfCacti; i++)
-                Functions.DrawSprite(ref Cacti[i].Sprite, ref Cacti[i].Transform);
+            for (int i = 0; i < (int)AmountOfCacti; i++)
+                Functions.Draw(ref Cacti[i].Sprite, ref Cacti[i].Transform);
         }
     }
 }

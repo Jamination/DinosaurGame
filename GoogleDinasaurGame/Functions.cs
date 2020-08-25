@@ -8,7 +8,7 @@ namespace GoogleDinasaurGame
 {
     public static class Functions
     {
-        public static void DrawSprite(ref Sprite sprite, ref Transform transform)
+        public static void Draw(ref Sprite sprite, ref Transform transform)
         {
             var centerOrigin = Vector2.Zero;
             
@@ -34,7 +34,7 @@ namespace GoogleDinasaurGame
 
         public static void RestartGame()
         {
-            Functions.PlaySound(Sounds.Restart);
+            PlaySound(Sounds.Restart);
             Globals.Speed = Constants.MinSpeed;
             ScoreSystem.HighScore = (int)Math.Max(ScoreSystem.HighScore, ScoreSystem.Score);
             ScoreSystem.Score = 0;
@@ -44,6 +44,7 @@ namespace GoogleDinasaurGame
             RainSystem.DropletAmount = 0;
             GoreSystem.BloodAmount = 0;
             Assets.RainSounds.Volume = 0f;
+            CactusSystem.AmountOfCacti = 1f;
             DinosaurSystem.Load();
             GroundSystem.Load();
             CloudSystem.Load();

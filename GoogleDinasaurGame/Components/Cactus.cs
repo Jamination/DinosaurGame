@@ -5,5 +5,6 @@
         public Sprite Sprite;
         public Hitbox Hitbox;
         public Transform Transform;
+        public bool Active;
     }
 }

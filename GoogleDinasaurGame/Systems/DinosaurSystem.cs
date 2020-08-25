@@ -165,7 +165,7 @@ namespace GoogleDinasaurGame.Systems
 
         public static void Draw()
         {
-            Functions.DrawSprite(ref Dinosaur.Sprite, ref Dinosaur.Transform);
+            Functions.Draw(ref Dinosaur.Sprite, ref Dinosaur.Transform);
         }
     }
 }
